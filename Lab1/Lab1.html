@@ -1,59 +1,123 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 1 - CSF3133</title>
+    <title>Lab 01 | CSF3133</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #222;
-            color: white;
+            padding: 25px 8%;
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo {
+            color: #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .hero {
             text-align: center;
-            padding: 30px;
+            padding: 75px 8% 55px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #94a3b8;
+        }
+
+        .section {
+            padding: 30px 8% 80px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
         }
 
         .card {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 28px;
+            transition: 0.3s;
         }
 
-        a {
-            color: #0066cc;
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
             text-decoration: none;
+            padding: 9px 16px;
+            border-radius: 6px;
+            font-size: 14px;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .card a:hover {
+            background: #0369a1;
         }
 
         .back {
-            display: inline-block;
-            margin-top: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back a {
+            color: #38bdf8;
+            text-decoration: none;
         }
 
         footer {
             text-align: center;
-            background-color: #222;
-            color: white;
-            padding: 15px;
+            padding: 25px;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 13px;
         }
     </style>
 </head>
@@ -61,58 +125,54 @@
 <body>
 
     <header>
-        <h1>Lab 1</h1>
-        <p>CSF3133 - Web Programming</p>
+        <div class="logo">CSF3133</div>
     </header>
 
-    <div class="container">
+    <section class="hero">
+        <h1>Laboratory <span>01</span></h1>
+        <p>My first laboratory exercises and practical work.</p>
+    </section>
 
-        <div class="card">
-            <h2>About Lab 1</h2>
-            <p>
-                Welcome to my Lab 1 portfolio.
-                This page contains the exercises and activities
-                completed for CSF3133.
-            </p>
+    <section class="section">
+        <h2>Lab 01 Activities</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>Exercise A</h3>
+                <p>View my Laboratory 1 Exercise A work.</p>
+                <a href="Lab1_ExerA.html">View Exercise</a>
+            </div>
+
+            <div class="card">
+                <h3>Exercise B</h3>
+                <p>View my Laboratory 1 Exercise B work.</p>
+                <a href="lab1_ExerB.html">View Exercise</a>
+            </div>
+
+            <div class="card">
+                <h3>Contact Page</h3>
+                <p>View my contact webpage practical work.</p>
+                <a href="contact.html">View Page</a>
+            </div>
+
+            <div class="card">
+                <h3>Lab Report</h3>
+                <p>View or download my Laboratory 1 report.</p>
+                <a href="LabReport1_CSF3133_s79478.docx">View Report</a>
+            </div>
+
         </div>
 
-        <div class="card">
-            <h2>Lab Exercises</h2>
-
-            <ul>
-                <li>
-                    <a href="Lab1_ExerA.html">Exercise A</a>
-                </li>
-
-                <li>
-                    <a href="lab1_ExerB.html">Exercise B</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Contact Page</a>
-                </li>
-            </ul>
+        <div class="back">
+            <a href="../index.html">← Back to Home</a>
         </div>
-
-        <div class="card">
-            <h2>Lab Report</h2>
-            <p>
-                <a href="LabReport1_CSF3133_s79478.docx">
-                    View / Download Lab 1 Report
-                </a>
-            </p>
-        </div>
-
-        <a class="back" href="../index.html">
-            &larr; Back to Home
-        </a>
-
-    </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 CSF3133 - Izzham Zul</p>
+        <p>CSF3133 | Laboratory 01</p>
+        <p>© 2026 All Rights Reserved</p>
     </footer>
 
 </body>
 </html>
-```
