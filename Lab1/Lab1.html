@@ -1,30 +1,118 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 1 - CSF3133</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 15px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Lab 1</h1>
-    <p>CSF3133 - Web Programming</p>
-    <hr>
+    <header>
+        <h1>Lab 1</h1>
+        <p>CSF3133 - Web Programming</p>
+    </header>
 
-    <h2>Lab 1 Exercises</h2>
+    <div class="container">
 
-    <p>Welcome to my Lab 1 exercises.</p>
+        <div class="card">
+            <h2>About Lab 1</h2>
+            <p>
+                Welcome to my Lab 1 portfolio.
+                This page contains the exercises and activities
+                completed for CSF3133.
+            </p>
+        </div>
 
-    <!-- Add your Lab 1 exercise links here -->
+        <div class="card">
+            <h2>Lab Exercises</h2>
 
-    <p>My Lab 1 work will be uploaded here.</p>
+            <ul>
+                <li>
+                    <a href="Lab1_ExerA.html">Exercise A</a>
+                </li>
 
-    <hr>
-    <a href="index.html">Back to Home</a>
+                <li>
+                    <a href="lab1_ExerB.html">Exercise B</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Page</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Lab Report</h2>
+            <p>
+                <a href="LabReport1_CSF3133_s79478.docx">
+                    View / Download Lab 1 Report
+                </a>
+            </p>
+        </div>
+
+        <a class="back" href="../index.html">
+            &larr; Back to Home
+        </a>
+
+    </div>
 
     <footer>
-        <p>&copy; 2026 Izzham Zul - CSF3133</p>
+        <p>&copy; 2026 CSF3133 - Izzham Zul</p>
     </footer>
 
 </body>
 </html>
+```
