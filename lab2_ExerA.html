@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>rogramming Workshop 2026</title>
+    </head>
+    <body>
+        <header>
+            <h1>Programming Workshop 2026</h1>
+            <p>Learn Programming from the Basics</p>
+        </header>
+
+        <nav>
+            <a href="#schedule">Schedule</a>
+            <a href="#register">Register</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <section id="Schedule">
+            <h2>Schedule for the event</h2>
+            <table border="1">
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+                <tr>
+                    <td>8:00 AM</td>
+                    <td>Registration</td>
+                    <td rowspan="2">Hall A</td>
+                    <td>Ali</td>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>Briefing</td>
+                    <td>Mirul</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Program Start</td>
+                    <td>Hall B</td>
+                    <td>Amir</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td colspan="3">Lunch Break</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td>Second Part</td>
+                    <td>Hall b</td>
+                    <td>Kumar</td>
+                </tr>
+                <tr>
+                    <td>5:00 PM</td>
+                    <td>Closing Ceremony</td>
+                    <td>Hall C</td>
+                    <td>Abu</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="About">
+            <h3>About the event</h3>
+            <p>This workshop introduces students to programming.</p>
+        </section>
+
+        <section id="Register">
+            <h4>Registeration</h4>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <label for="matric">Matric Number:</label>
+            <input type="text" id="matric" name="matric">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <p>Year of Study:</p>
+
+            <input type="radio" id="year1" name="year" value="1">
+            <label for="year1">Year 1</label>
+
+            <input type="radio" id="year2" name="year" value="2">
+            <label for="year2">Year 2</label>
+
+            <input type="radio" id="year3" name="year" value="3">
+            <label for="year3">Year 3</label>
+
+            <input type="radio" id="year4" name="year" value="4">
+            <label for="year4">Year 4</label>
+
+            <p>Sessions You Want to Join:</p>
+
+            <input type="checkbox" id="html" name="session" value="HTML">
+            <label for="html">HTML Workshop</label>
+
+            <input type="checkbox" id="java" name="session" value="Java">
+            <label for="java">Java Workshop</label>
+
+            <input type="checkbox" id="database" name="session" value="Database">
+            <label for="database">Database Workshop</label>
+            
+            <label for="programme">Programme:</label>
+
+            <select id="programme" name="programme">
+                <option value="se">Software Engineering</option>
+                <option value="cs">Computer Science</option>
+                <option value="it">Information Technology</option>
+                <option value="ds">Data Science</option>
+            </select>
+
+            <form action="register.html" method="post">
+
+                <!-- Semua input borang diletakkan di sini -->
+
+                <input type="submit" value="submit">
+
+            </form>
+        </section>
+
+        <footer>
+            <p>Organised by the Computer Science Faculty</p>
+            <p>Copyright &copy; 2026</p>
+        </footer>
+    </body>
+</html>
