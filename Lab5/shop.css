@@ -1,0 +1,115 @@
+
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBF7F0;
+}
+
+/* Task 1: Header Background */
+header {
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Task 2: Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* Task 3: Active Navigation Link */
+nav li a.active {
+    background-color: #04AA6D;
+}
+
+/* Task 4: Main Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #1B4F72;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Task 5: Product Table */
+#product {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#product td,
+#product th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#product th {
+    background-color: #1B4F72;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#product tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+#product tr:hover {
+    background-color: #ddd;
+}
+
+#product td:last-child {
+    text-align: right;
+}
+
+/* Task 6: Footer */
+footer {
+    background-color: #EFE6D8;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
